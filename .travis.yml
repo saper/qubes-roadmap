@@ -1,5 +1,5 @@
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install libgraphviz4 graphviz
+  - sudo apt-get -y install libgraphviz-dev graphviz-dev
 
 script: make
