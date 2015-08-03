@@ -1,7 +1,6 @@
 before_install:
   - sudo add-apt-repository ppa:gviz-adm/graphviz-dev -y
-  - sudo apt-get update -qq
-  - sudo yes "" | sudo apt-get dist-upgrade -q
+  - sudo apt-get update
   - sudo apt-get -y install graphviz
 
 script: make
