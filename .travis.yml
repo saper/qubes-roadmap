@@ -1,3 +1,13 @@
+deploy:
+  provider: releases
+  api_key: $GITHUB
+  file:
+    - roadmap.pdf
+    - roadmap.png
+  skip_cleanup: true
+  on:
+    tags: true
+
 before_install:
   - sudo add-apt-repository ppa:gviz-adm/graphviz-dev -y
   - sudo apt-get update -qq
